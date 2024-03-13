@@ -1,5 +1,13 @@
 //alert("Hola este es mi Javascript");
 
+let menu_responsive = document.querySelector(".checkbtn");
+menu_responsive.onclick = function () {
+  navBar = document.querySelector(".navbar");
+  navBar.classList.toggle("active");
+};
+
+
+
 const form = document.getElementById("form");
 const nombre = document.getElementById("nombre");
 const email = document.getElementById("email");
