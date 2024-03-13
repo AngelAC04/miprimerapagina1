@@ -166,7 +166,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 80px;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
 }
 
 .tarjeta {
@@ -290,6 +290,179 @@ footer {
     }
 
 }
+
+/*FORMULARIO*/
+
+ 
+  /* ------------- Encabezado Contacto ------------- */
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    color: black;
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 60%;
+    margin: 0px auto;
+    padding: 20px;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 0px 0 10px 0;
+  }
+
+
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+  }
+  
+  .form-row input[type="text"], .form-row input[type="email"] {
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+    max-width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  }
+
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+    max-width: 250px;
+  }
+    
+
+  
+  .form-row label {
+    margin-bottom: 4px;
+    /*text-align: right;*/
+    
+    
+  }
+
+
+  /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+  }
+
+  
+  /* ------------- Para Pantallas de más de 700px ------------- */
+  
+  
+ .form-row textarea {
+      width: 100%;
+    }
+
+
+
+.form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 50px;
+        cursor: pointer;
+
+        align-items: center;
+
+        /*margin: 0 auto; /* Centra el botón horizontalmente */
+
+  }
+      
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+      
+      
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+      .form-row button {
+          margin-left: 120px;
+          
+        
+      }
 
 
     
