@@ -1,0 +1,298 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.greeting{
+    color: #2317d3;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    border-bottom: 1px solid #ccc; /* Añade un borde inferior gris de 1px */
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(160, 46, 46);
+    padding: 0rem 0.8rem;
+
+}
+
+header div ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+
+}
+header a i{
+    color: rgb(73, 73, 73);
+    font-size: 3em;
+    padding: 0.5em;
+
+
+}
+header nav ul{
+    display: flex;
+    gap: 2.5em;
+
+}
+
+header nav ul li a{
+    color: rgb(107, 107, 107);
+    font-size: 22px;
+}
+
+
+.seccion-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.acerca-de {
+    flex: 1;
+    max-width: 30%;
+    padding: 50px;/*distancia entre imagen y texto*/ 
+    text-align: right;
+    font-size: 20px
+}
+
+.acerca-de h2 {
+    color: #ff0000; /* Cambiar el color del texto a rojo */
+}
+
+.seccion-2 img{
+    width: 100%;
+
+}
+
+footer {
+    background-color: #4d4645;
+    color: white;
+    padding: 1rem;
+}
+    
+footer h3 {
+    color: yellow;
+}
+    
+footer ul {
+    padding: 0;
+}
+    
+footer a {
+    color: white;
+    line-height: 1.5;
+}
+    
+footer div span.material-symbols-outlined {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: yellow;
+    font-size: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+    
+footer div span.material-symbols-outlined:hover {
+    color: red;
+}
+
+.seccion-2{
+    width: 100%;
+}
+
+.seccion-2 img {
+    width: 100%; /* Establece la imagen para que ocupe todo el ancho disponible */
+    height: 500px; /* Mantiene la proporción de aspecto */
+}
+
+footer {
+    background-color: #4d4645;
+    color: white;
+    padding: 1rem;
+    text-align: center; /* Centrar texto y enlaces */
+}
+
+.social-media {
+    display: flex;
+    justify-content: center; /* Centrar enlaces */
+    align-items: center;
+    margin-bottom: 1rem; /* Añadir margen inferior */
+}
+
+.social-media a {
+    display: flex; /* Alinear elementos horizontalmente */
+    align-items: center; /* Alinear elementos verticalmente */
+    color: white;
+    margin: 0 10px; /* Añadir espacio entre enlaces */
+    text-decoration: none;
+}
+
+.social-media a i {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+
+/*TARJETAS*/
+
+.tarjet h2{
+    margin-left: 20px;
+    margin-top: 100px;
+    color: #ff0000;
+}
+.target {
+    background-color: #4d4645;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 200px;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);*/
+    text-align: left;
+    max-width: 300px;
+    width: 100%;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tarjeta h3 {
+    margin-top: 0;
+}
+
+.tarjeta p {
+    margin-bottom: 15px;
+}
+
+.tarjeta a {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 0px 0px;
+    text-decoration: none;
+    /*border-radius: 3px;
+    border: 1px solid #4d4645;*/
+    
+}
+
+.tarjeta a:hover {
+    background-color: #4d4645;
+    color: white;
+}
+
+.checkbtn {
+    font-size: 25px;
+    color: rgb(186, 5, 5);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header {
+      background-color: burlywood;
+    }
+  
+    .checkbtn {
+      display: block;
+    }
+  
+    .navbar {
+      height: 0vh;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background: #2c3e50;
+      text-align: center;
+  
+      transition: all 0.5s;
+      overflow: hidden;
+    }
+  
+    .navbar ul.menu {
+      float: none;
+      display: block;
+      width: 174px;
+      margin: 0 auto;
+      opacity: 0;
+    }
+  
+    .navbar ul.menu li a:hover {
+      color: #b59a61;
+    }
+    /* ACTIVE */
+    .navbar.active {
+      height: 100vh;
+    }
+  
+    .navbar.active ul.menu {
+      opacity: 1;
+    }
+
+    .navbar ul.menu li {
+        margin-bottom: 80px; /* Ajusta este valor según la distancia que desees */
+        margin-top: 30px;
+        
+    }
+
+    .navbar ul li a{
+
+        color: #ffffff;
+    }
+
+
+    .tarjetas {
+        flex-direction: column; /* Apilar las tarjetas una encima de la otra */
+        align-items: center; /* Centrar las tarjetas horizontalmente */
+        gap: 20px;
+    }
+
+   
+
+    .acerca-de {
+        text-align: center; /* Centra el texto dentro de la sección acerca-de */
+        max-width: 100%;
+    }
+
+}
+
+
+    
+
+
+
